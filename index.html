@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="title_description">
+            <h1 id="title">DOTA 2 Survey</h1>
+            <p id="description">Trying to know fellow DOTA players</p>
+        </div>
+        <div class="main-content">
+            <form id="survey-form" action="#" method="POST">
+                <label for="name" id="name-label" class="question">Name:</label>
+                <input id="name" type="text" name="name" placeholder="Your full name" class="answer" required>
+                <label for="email" id="email-label" class="question">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Your email address" class="answer" required>
+                <label for="number" id="number-label" class="question">Age:</label>
+                <input id="age" type="number" name="number" placeholder="Your age" min="1" max="200" class="answer" required>
+                <label for="dropdown" class="question">Your current rank:</label>
+                <select id="dropdown" class="answer">
+                <option value="medal" disabled selected>Medal</option>
+                <option value="herald">Herald</option>
+                <option value="gurdian">Gurdian</option>
+                <option value="crusader">Crusader</option>
+                <option value="archon">Archon</option>
+                <option value="legend">Legend</option>
+                <option value="ancient">Ancient</option>
+                <option value="divine">Divine</option>
+                <option value="immortal">Immortal</option>
+                </select>
+                <label>Star:</label>
+                <input id="rank" type="number" name="number" min="1" max="7" placeholder="1-7" class="answer">
+                <p class="question radio-question">You typically play DOTA 2:</p>
+                <label for="day" class="answer radio">
+                    <input type="radio" id="day" name="frequency" value="Every day"> Every day
+                </label>
+                <label for="week" class="answer radio">
+                    <input type="radio" id="week" name="frequency" value="Every week"> Every week
+                </label>
+                <label for="month" class="answer radio">
+                    <input type="radio" id="month" name="frequency" value="Every month"> Every month
+                </label>
+                <label for="once" class="answer radio">
+                    <input type="radio" id="once" name="frequency" value="Once in a while"> Once in a while
+                </label>
+                <p class="question radio-question">How many account(s) do you have for DOTA 2?</p>
+                <label for="1" class="answer radio">
+                    <input type="radio" id="1" name="account#" value="One"> One
+                </label>
+                <label for="more" class="answer radio">
+                    <input type="radio" id="more" name="account#" value="More than one"> More than one
+                </label>
+                <p class="question checkbox-questions">What behaviors do you consider "toxic" in DOTA 2?</p>
+                <label for="tox1" class="answer checkbox">
+                    <input type="checkbox" id="tox1" name="tox1" value="flamming"> Flaming / Verbal Abuse
+                </label>
+                <label for="tox2" class="answer checkbox">
+                    <input type="checkbox" id="tox2" name="tox2" value="refuse"> Refusal to Communicate
+                </label>
+                <label for="tox3" class="answer checkbox">
+                    <input type="checkbox" id="tox3" name="tox3" value="feed"> Feeding on Purpose
+                </label>
+                <label for="tox4" class="answer checkbox">
+                    <input type="checkbox" id="tox4" name="tox4" value="AFK"> AFKing
+                </label>
+                <label for="tox5" class="answer checkbox">
+                    <input type="checkbox" id="tox5" name="tox5" value="spam"> Spamming
+                </label>
+                <label for="suggest" class="question">Any suggestion for improving the survey?</label>
+                <textarea class="answer" id="suggest" name="suggest" rows="10" cols="7put0" placeholder="Your thoughts!" class="answer"></textarea>
+                <input class="submit" id="submit" type="submit" name="submit">
+            </form>
+        </div>
+    </body>
+</html>
